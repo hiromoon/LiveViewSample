@@ -12,7 +12,10 @@ config :live_view_sample, LiveViewSampleWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "PzyM/sDfoxiu4KMO+5Z0clfofKQjZ9lRxmElFqenfptPgpA/vyb/72IZpE/bLvSB",
   render_errors: [view: LiveViewSampleWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: LiveViewSample.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: LiveViewSample.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "3ZcV3RsdNq00N4hrhFyyyppgSJzmKxGb"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,
