@@ -1,7 +1,6 @@
 defmodule LiveViewSampleWeb.PageController do
   use LiveViewSampleWeb, :controller
 
-  def index(conn, _params) do
-    render(conn, "index.html")
+  def index(_conn, _params) do
   end
 end
